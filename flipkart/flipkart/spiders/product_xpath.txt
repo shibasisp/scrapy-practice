@@ -1,0 +1,39 @@
+1. Product Page
+Image : response.xpath('//div[@class="_33MqSN"]/div[@class="_3S6yHr"]/div[@class="_26KFgP"]/div[@class="_2wEmBu"]/div[@class="_1hMRnR"]/div[@class="_2SIJjY"]/img/@src').extract_first()
+//*[@id="container"]/div/div[1]/div/div/div/div[1]/div/div[1]/div[1]/div[1]/div[2]/div[1]/img
+Item Name: response.xpath('//div[@class="_33MqSN"]/div[@class="_2Cl4hZ"]/div[@class="_1MVZfW"]/div[@class="_2UDlNd"]/div/h1[@class="_3eAQiD"]/text()').extract()
+//*[@id="container"]/div/div[1]/div/div/div/div[1]/div/div[2]/div[2]/div[1]/div/h1
+Sale Price: response.xpath('//div[@class="_33MqSN"]/div[@class="_2Cl4hZ"]/div[@class="_1MVZfW"]/div[@class="_3ZYEWO"]/div[@class="_2MUtYG"]/div[@class="_1uv9Cb"]/div[@class="_1vC4OE _37U4_g"]/text()').extract()
+//*[@id="container"]/div/div[1]/div/div/div/div[1]/div/div[2]/div[2]/div[4]/div[1]/div/div[1]
+MRP:        response.xpath('//div[@class="_33MqSN"]/div[@class="_2Cl4hZ"]/div[@class="_1MVZfW"]/div[@class="_3ZYEWO"]/div[@class="_2MUtYG"]/div[@class="_1uv9Cb"]/div[@class="_3auQ3N _16fZeb"]/text()').extract()
+//*[@id="container"]/div/div[1]/div/div/div/div[1]/div/div[2]/div[2]/div[4]/div[1]/div/div[2]
+Discount :  response.xpath('//div[@class="_33MqSN"]/div[@class="_2Cl4hZ"]/div[@class="_1MVZfW"]/div[@class="_3ZYEWO"]/div[@class="_2MUtYG"]/div[@class="_1uv9Cb"]/div[@class="VGWI6T _3GXWnA"]/text()').extract()
+//*[@id="container"]/div/div[1]/div/div/div/div[1]/div/div[2]/div[2]/div[4]/div[1]/div/div[3]
+Warranty: response.xpath('//div[@class="_33MqSN"]/div[@class="_2Cl4hZ"]/div[@class="_2sVT0Y"]/div[@class="_3h7IGd"]/text()').extract()
+//*[@id="container"]/div/div[1]/div/div/div/div[1]/div/div[2]/div[6]/div[2]
+Features: response.xpath('//div[@class="_33MqSN"]/div[@class="_2Cl4hZ"]/div[@class="_2KVF1P"]/div[class="g2dDAR flex"]/div[class="_3WHvuP"]/ul/li[@class="_2-riNZ"]/text()').extract()
+//*[@id="container"]/div/div[1]/div/div/div/div[1]/div/div[2]/div[9]/div[1]/div[2]/ul/li[1]
+Rating: response.xpath('//div[@class="_33MqSN"]/div[@class="_2Cl4hZ"]/div[@class="col _39LH-M"]/div[@class="row _1Ahy2t _2aFisS"]/div[@class="ebepc-"]/div[@class="row"]/div[@class="col-4-12"]/div[@class="col"]/div[@class="row"]/div[@class="col-12-12 _11EBw0"]/div[@class="_1i0wk8"]/text()').extract_first()
+
+
+
+//div[@class="_33MqSN"]/div[@class="_2Cl4hZ"]/div[@class="_1MVZfW"]/div[4]/div[1]/div/div[1]
+//div[@class="_33MqSN"]/div[@class="_2Cl4hZ"]/div[@class="_1MVZfW"]/div[1]/div/h1
+//div[@class="_33MqSN"]/div[@class="_3S6yHr"]/div[@class="_26KFgP"]/div[@class="_2wEmBu"]/div[@class="_1hMRnR"]/div[@class="_2SIJjY"]/img
+
+
+2. category page(https://www.flipkart.com/mobiles/pr?sid=tyy,4io) One item in a row
+
+Name: class="_3wU53n"
+Sub Name/Mode = class="OiPjke"
+Rating = span id="productRating_LSTMOBEX9WXUSZVYHETFSTZ7W_MOBEX9WXUSZVYHET_".class="hGSR34 _2beYZw"
+General Features: class="vFw0gD"
+Sale Price: class="_1vC4OE _2rQ-NK"
+MRP: class="_3auQ3N _2GcJzG"
+Discount: class="VGWI6T"
+Image: class="_1Nyybr _30XEf0"
+Next Page URL: class="_2kUstJ"s
+
+Category Page(
+    Product_page_url: class="_2cLu-l"
+    //*[@id="container"]/div/div[1]/div/div[2]/div/div[2]/div/div[3]/div[1]/div[1]/div[1]/div/a[2]
